@@ -1,0 +1,183 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(../font/latianextRobotoRegular.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(../font/latianRobotoRegular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(../font/latianextRobotoBold.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(../font/latianRobotoBold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* NAVBAR BEGIN */
+body
+{
+  background-color:white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.bg-color
+{
+  background-color:#343536;
+  color: white;
+}
+
+
+
+.navbar-nav > li
+{
+ padding-left:50px;
+  padding-right:50px;
+  
+}
+
+.navbar
+{
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.container-fluid
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+/* NAVBAR END */
+
+.center {
+
+display: flex;
+justify-content: center;
+}
+
+
+
+/*swiche toggle*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+ height: 16px;
+width: 14px;
+left: 2px;
+bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: greenyellow;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #343536;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
