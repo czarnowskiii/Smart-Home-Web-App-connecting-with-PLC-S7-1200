@@ -1,0 +1,863 @@
+<!doctype html>
+
+
+<!-- AWP_In_Variable Name='"wwwWlacznikPraduZewnetrzny"'-->
+
+
+
+
+<!-- AWP_Enum_Def Name="wyjscieWlacznikPraduZewnetrznyValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+
+<!-- AWP_Enum_Def Name="wyjscieWlacznikPraduZewnetrzny2IsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWylacznikGlowny"'-->
+<!-- AWP_Enum_Def Name="glowny_pomocValue" Values='0:"Wylaczony",1:"Wlaczony"' -->
+<!-- AWP_Enum_Def Name="WylacznikOswietleniaGlownyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_Enum_Def Name="WyjscieLampaPNZBIORCZEValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="WyjscieLampaWschZBIORCZEValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="WyjscieLampaPDZbiorczeValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="WyjscieLampaZachZBIORCZEValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="WyjscieLampaPodjazdOgrodZBIORCZEValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="SwiatlaprzedBramaValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+ 
+<!-- AWP_Enum_Def Name="OswietlenieKuchniaValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietlenieSalonValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietleniePrzedpokojValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietlenieLazienkaDolValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietlenieGarazValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietlenieSchodyValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietleniePokoj1GoraValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietleniePokoj2GoraValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietleniePokoj3GoraValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietlenieLazienkaGoraValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+<!-- AWP_Enum_Def Name="OswietleniePrzedpokojGoraaValue" Values='0:"Wylaczone",1:"Wlaczone"' -->
+
+<!-- AWP_In_Variable Name='"wwwKuchnia"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaKuchniaFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwSalon"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaSalonFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwPrzedpokoj"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaPrzedpokojFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWCdol"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaLazienkaDolFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwGaraz"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaGarazFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwSchody"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaSchodyFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwPokoj1"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaPokoj1GoraFizycznyIsChecked" Values='0:"",1:"checked"' -->
+<!-- AWP_In_Variable Name='"wwwPokoj2"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaPokoj2GoraFizycznyIsChecked" Values='0:"",1:"checked"' -->
+<!-- AWP_In_Variable Name='"wwwPokoj3"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaPokoj3GoraFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWCgora"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaLazienkaGoraFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwPrzedpokojGora"'-->
+<!-- AWP_Enum_Def Name="WlacznikSwiatlaPrzedpokojGoraFizycznyIsChecked" Values='0:"",1:"checked"' -->
+
+
+<!-- AWP_In_Variable Name='"wwwZawor"'-->
+<!-- AWP_Enum_Def Name="ZraszaczeValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="SystemWodnyIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWlacznikAlarmuDomowego"'-->
+<!-- AWP_Enum_Def Name="WlacznikAlarmuGlownegoValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="WlacznikAlarmuGlownego2IsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuKuchnia"'-->
+<!-- AWP_Enum_Def Name="pam_kuchnia_pomocValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuKuchniaIsChecked" Values='0:"",1:"checked"' -->
+
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuSalon1"'-->
+<!-- AWP_Enum_Def Name="pomoc_alarm_salon1Value" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuSalon1IsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuSalon2"'-->
+<!-- AWP_Enum_Def Name="pomoc_alarm_salon2Value" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuSalon2IsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuPrzedpokojDol"'-->
+<!-- AWP_Enum_Def Name="pomoc_przedpokojDOLValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuPrzedpokojDolIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuGaraz"'-->
+<!-- AWP_Enum_Def Name="pomoc_alarm_garazValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuGarazIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwZalaczenieAlarmuPrzedpokojGora"'-->
+<!-- AWP_Enum_Def Name="pomoc_przedpokoj_goraValue" Values='0:"Wylaczony!",1:"Wlaczony!"' -->
+<!-- AWP_Enum_Def Name="ZalaczenieAlarmuPrzedpokojGoraIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWlacznikSystemPP"'-->
+<!-- AWP_Enum_Def Name="pam_pozarValue" Values='0:"Wylaczony",1:"Wlaczony"' -->
+<!-- AWP_Enum_Def Name="WlacznikSystemPPIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWlacznikSystemCzadu"'-->
+<!-- AWP_Enum_Def Name="pam_czadValue" Values='0:"Wylaczony",1:"Wlaczony"' -->
+<!-- AWP_Enum_Def Name="WlacznikSystemCzaduIsChecked" Values='0:"",1:"checked"' -->
+
+<!-- AWP_In_Variable Name='"wwwWlacznikZdalnyRolet"'-->
+<!-- AWP_Enum_Def Name="CzujnikPołożeniaRolet_Zamkniete/OtwarteValue" Values='0:"Zamknięte",1:"Otwarte"' -->
+<!-- AWP_Enum_Def Name="WlacznikZdalnyRoletIsChecked" Values='0:"",1:"checked"' -->
+
+
+<!-- AWP_In_Variable Name='"PrzyciskGaraz"'-->
+<!-- AWP_Enum_Def Name="Tag_181Value" Values='0:"STAN POCZATKOWY",1:"Otwieranie",2:"Otwieranie zatrzymane",3:"Brama otwarta",4:"Zamykanie",5:"Zatrzymanie zamykania",6:"Zamknieta"' -->
+
+<!-- AWP_In_Variable Name='"PrzyciskBramaWjazdowa"'-->
+<!-- AWP_Enum_Def Name="Tag_7Value" Values='0:"STAN POCZATKOWY",1:"Otwieranie",2:"Otwieranie zatrzymane",3:"Brama otwarta",4:"Zamykanie",5:"Zatrzymanie zamykania",6:"Zamknieta"' -->
+
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--<meta http-equiv="refresh" content="5"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuerry -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <title>STEROWANIE</title>
+  <link rel="shortcut icon" href="zdjecia/favicon.ico">
+    
+</head>
+
+<body>
+    <!-- NAVBAR ROW BEGIN -->
+    
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-color navbar-expand-xl py-2">
+    <div class="d-flex w-50 order-0">
+        <a class="navbar-brand mr-1" href="#">Twój SMART HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">START</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sterowanie.html">STEROWANIE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alarmy.html">ALARMY/AWARIE</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">Praca inżynierska</span>
+</nav> 
+   <!-- Koniec NAVBARA-->
+   
+    <!-- TABELA-->
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"><img src="zdjecia/home_icon.jpg"; style=" width:40px; height=40px; " /></th>
+      <th scope="col">ELEMENT STEROWANY</th>
+      <th scope="col">STAN AKTUALNY</th>
+        <th scope="col">KONTROLUJ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--<tr>
+      <th scope="row">1</th>
+      <td>Brama wjazdowa</td>
+      <td></td>
+                               
+      <td>  
+      <!-- <form>
+        <!-- PRZYCISKI  1 i 0
+       <input type="hidden" name='"STOP"' value="0" />
+            <input type="hidden" name='"START"' value="1" />
+            <input type="submit" value="1" / >  
+     </form>
+        
+        <form>
+        <input type="hidden" name='"STOP"' value="1" />
+            <input type="hidden" name='"START"' value="0"/>
+            <input type="submit" value="0" / >
+            
+        </form> -->
+          
+       
+     
+      <!--</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Brama garażowa</td>
+      <td>Zamknięta</td>
+      <td><label class="switch"> <input type="checkbox" checked ><span class="slider round"></span> </label></td>
+    </tr>
+    <tr>
+     <th scope="row">3</th>
+      <td>Światło w salonie</td>
+      <td>Włączone</td>
+      <td><label class="switch"> <input type="checkbox" checked><span class="slider round"></span> </label></td>
+    </tr>
+       <tr>
+     <th scope="row">4</th>
+      <td>Nawadnianie ogrodu</td>
+      <td>Włączone</td>
+      <td><label class="switch"> <input type="checkbox" checked><span class="slider round"></span> </label></td>
+    </tr>-->
+       <tr>
+     
+           <td colspan="4" ><div class="center"><b>Ogólne</b></div></td></tr>
+          <tr>
+      <th scope="row">1</th>
+      <td>Włącznik prądu zewnętrzny</td>
+      <td><!-- AWP_Enum_Ref Name='"wyjscieWlacznikPraduZewnetrzny"' Enum="wyjscieWlacznikPraduZewnetrznyValue" --> :="wyjscieWlacznikPraduZewnetrzny":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"wyjscieWlacznikPraduZewnetrzny2"' Enum="wyjscieWlacznikPraduZewnetrzny2IsChecked" --> :="wyjscieWlacznikPraduZewnetrzny2": id="WlacznikPraduZewnetrzny-input"><span class="slider round"></span></label></td>
+    </tr>
+      
+       <tr>
+      <th scope="row">2</th>
+      <td>SYSTEM PRZECIWPOŻAROWY</td>
+      <td><!-- AWP_Enum_Ref Name='"pam_pozar"' Enum="pam_pozarValue" --> :="pam_pozar":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSystemPP"' Enum="WlacznikSystemPPIsChecked" --> :="WlacznikSystemPP": id="ppoz-input"><span class="slider round"></span></td>
+    </tr>
+      
+      
+      <tr>
+      <th scope="row">3</th>
+      <td>SYSTEM ANTY-CZADOWY</td>
+      <td><!-- AWP_Enum_Ref Name='"pam_czad"' Enum="pam_czadValue" --> :="pam_czad":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSystemCzadu"' Enum="WlacznikSystemCzaduIsChecked" --> :="WlacznikSystemCzadu": id="czad-input"><span class="slider round"></span></td>
+    </tr>
+      <tr>
+      <th scope="row">4</th>
+      <td>Główny wyłacznik oświetlenia</td>
+      <td><!-- AWP_Enum_Ref Name='"glowny_pomoc"' Enum="glowny_pomocValue" --> :="glowny_pomoc":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WylacznikOswietleniaGlowny"' Enum="WylacznikOswietleniaGlownyIsChecked" --> :="WylacznikOswietleniaGlowny": id="glowny-input"><span class="slider round"></span></td>
+    </tr>
+      
+       <tr>
+           <td colspan="4" ><div class="center"><b>Oświetlenie zewnętrzne</b></div></td></tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Lampy PÓŁNOC</td>
+      <td><!-- AWP_Enum_Ref Name='"WyjscieLampaPNZBIORCZE"' Enum="WyjscieLampaPNZBIORCZEValue" --> :="WyjscieLampaPNZBIORCZE":</td>
+      <td>Sterowane czujnikiem zmierzchu</td>
+    </tr>
+       <tr>
+      <th scope="row">2</th>
+      <td>Lampy POŁUDNIE</td>
+      <td><!-- AWP_Enum_Ref Name='"WyjscieLampaPDZbiorcze"' Enum="WyjscieLampaPDZbiorczeValue" --> :="WyjscieLampaPDZbiorcze":</td>
+           
+      <td>Sterowane czujnikiem zmierzchu</td>
+    </tr>
+    
+       <tr>
+      <th scope="row">3</th>
+      <td>Lampy WSCHÓD</td>
+           
+      <td><!-- AWP_Enum_Ref Name='"WyjscieLampaWschZBIORCZE"' Enum="WyjscieLampaWschZBIORCZEValue" --> :="WyjscieLampaWschZBIORCZE":</td>
+      <td>Sterowane czujnikiem zmierzchu</td>
+    </tr>
+      
+       <tr>
+      <th scope="row">4</th>
+      <td>Lampy ZACHÓD</td>
+           
+      <td><!-- AWP_Enum_Ref Name='"WyjscieLampaZachZBIORCZE"' Enum="WyjscieLampaZachZBIORCZEValue" --> :="WyjscieLampaZachZBIORCZE":</td>
+      <td>Sterowane czujnikiem zmierzchu</td>
+    </tr>
+   
+            <tr>
+      <th scope="row">5</th>
+      <td>Lampy Podjazd+Ogród</td>
+           
+      <td><!-- AWP_Enum_Ref Name='"WyjscieLampaPodjazdOgrodZBIORCZE"' Enum="WyjscieLampaPodjazdOgrodZBIORCZEValue" --> :="WyjscieLampaPodjazdOgrodZBIORCZE":</td>
+      <td>Sterowane czujnikiem zmierzchu</td>
+    </tr>
+      
+      <tr>
+      <th scope="row">6</th>
+      <td>Lampy przed Bramą</td>
+           
+      <td><!-- AWP_Enum_Ref Name='"SwiatlaprzedBrama"' Enum="SwiatlaprzedBramaValue" --> :="SwiatlaprzedBrama":</td>
+      <td>Sterowane czujnikiem ruchu</td>
+    </tr>
+      
+      <tr>
+     
+           <td colspan="4" ><div class="center"><b>Oświetlenie wewnętrzne</b></div></td></tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Światło Kuchnia </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieKuchnia"' Enum="OswietlenieKuchniaValue" --> :="OswietlenieKuchnia":</td>
+          <td> <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaKuchniaFizyczny"' Enum="WlacznikSwiatlaKuchniaFizycznyIsChecked" --> :="WlacznikSwiatlaKuchniaFizyczny": id="kuchnia-input"><span class="slider round"></span> </td></tr>
+           
+      <tr> <th scope="row">2</th>
+      <td>Światło Salon </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieSalon"' Enum="OswietlenieSalonValue" --> :="OswietlenieSalon":</td>
+          <td>  <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaSalonFizyczny"' Enum="WlacznikSwiatlaSalonFizycznyIsChecked" --> :="WlacznikSwiatlaSalonFizyczny": id="salon-input"><span class="slider round"></span> </td>      </tr>
+       <tr>  <th scope="row">3</th>
+      <td>Światło Przedpokoj </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietleniePrzedpokoj"' Enum="OswietleniePrzedpokojValue" --> :="OswietleniePrzedpokoj":</td>
+           <td>     <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaPrzedpokojFizyczny"' Enum="WlacznikSwiatlaPrzedpokojFizycznyIsChecked" --> :="WlacznikSwiatlaPrzedpokojFizyczny": id="przedpokoj-input"><span class="slider round"></span>  </td>    </tr>
+       <tr>  <th scope="row">4</th>
+      <td>Światło WC Dół </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieLazienkaDol"' Enum="OswietlenieLazienkaDolValue" --> :="OswietlenieLazienkaDol":</td>
+          <td>     <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaLazienkaDolFizyczny"' Enum="WlacznikSwiatlaLazienkaDolFizycznyIsChecked" --> :="WlacznikSwiatlaLazienkaDolFizyczny": id="wcDol-input"><span class="slider round"></span>   </td>    </tr>
+        <tr> <th scope="row">5</th>
+      <td>Światło Garaż </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieGaraz"' Enum="OswietlenieGarazValue" --> :="OswietlenieGaraz":</td>
+           <td>     <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaGarazFizyczny"' Enum="WlacznikSwiatlaGarazFizycznyIsChecked" --> :="WlacznikSwiatlaGarazFizyczny": id="swiatloGaraz-input"><span class="slider round"></span>   </td></tr>
+         <tr><th scope="row">6</th>
+      <td>Światło Schody </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieSchody"' Enum="OswietlenieSchodyValue" --> :="OswietlenieSchody":</td>
+           <td>   <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaSchodyFizyczny"' Enum="WlacznikSwiatlaSchodyFizycznyIsChecked" --> :="WlacznikSwiatlaSchodyFizyczny": id="schody-input"><span class="slider round"></span> </td>      </tr>
+        <tr> <th scope="row">7</th>
+      <td>Światło Pokój 1 Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietleniePokoj1Gora"' Enum="OswietleniePokoj1GoraValue" --> :="OswietleniePokoj1Gora":</td>
+          <td>     <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaPokoj1GoraFizyczny"' Enum="WlacznikSwiatlaPokoj1GoraFizycznyIsChecked" --> :="WlacznikSwiatlaPokoj1GoraFizyczny": id="pokoj1-input"><span class="slider round"></span> </td> </td>    </tr>
+         <tr><th scope="row">8</th>
+      <td>Światło Pokój 2 Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietleniePokoj2Gora"' Enum="OswietleniePokoj2GoraValue" --> :="OswietleniePokoj2Gora":</td>
+             <td>   <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaPokoj2GoraFizyczny"' Enum="WlacznikSwiatlaPokoj2GoraFizycznyIsChecked" --> :="WlacznikSwiatlaPokoj2GoraFizyczny": id="pokoj2-input"><span class="slider round"></span>  </td> </tr>    
+        <tr> <th scope="row">9</th>
+      <td>Światło Pokój 3 Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietleniePokoj3Gora"' Enum="OswietleniePokoj3GoraValue" --> :="OswietleniePokoj3Gora":</td>
+             <td>    <label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaPokoj3GoraFizyczny"' Enum="WlacznikSwiatlaPokoj3GoraFizycznyIsChecked" --> :="WlacznikSwiatlaPokoj3GoraFizyczny": id="pokoj3-input"><span class="slider round"></span>    </td>  </tr>
+         <tr><th scope="row">10</th>
+      <td>Światło WC Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietlenieLazienkaGora"' Enum="OswietlenieLazienkaGoraValue" --> :="OswietlenieLazienkaGora":</td>
+             <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaLazienkaGoraFizyczny"' Enum="WlacznikSwiatlaLazienkaGoraFizycznyIsChecked" --> :="WlacznikSwiatlaLazienkaGoraFizyczny": id="wcGora-input"><span class="slider round"></span></td></tr>
+        <tr>   <th scope="row">11</th>
+      <td>Światło Przedpokój Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"OswietleniePrzedpokojGoraa"' Enum="OswietleniePrzedpokojGoraaValue" --> :="OswietleniePrzedpokojGoraa":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikSwiatlaPrzedpokojGoraFizyczny"' Enum="WlacznikSwiatlaPrzedpokojGoraFizycznyIsChecked" --> :="WlacznikSwiatlaPrzedpokojGoraFizyczny": id="PrzedpokojGora-input"><span class="slider round"></span></td></tr>
+              <!--<form>
+        
+       
+            <input type="hidden" name='"SterowanieKuchnia fizyczne/zdalne"' value="1" />
+            <input type="submit" value="STRONA" / >  
+     </form>
+        
+        <form>
+       
+            <input type="hidden" name='"SterowanieKuchnia fizyczne/zdalne"' value="0"/>
+            <input type="submit" value="DOM" / >
+            
+        </form> -->
+          
+      <!--  <tr>
+      <th scope="row">1</th>
+      <td>Światło kuchnia</td>
+      <td></td>
+      <td><div>a</div><div>b</div></td>
+    </tr>-->
+      
+           
+      <tr>
+     
+           <td colspan="4" ><div class="center"><b>System nawadniania ogrodowego</b></div></td></tr>
+      
+      <tr>
+      <th scope="row">1</th>
+      <td>Zraszacze</td>
+      <td><!-- AWP_Enum_Ref Name='"Zraszacze"' Enum="ZraszaczeValue" --> :="Zraszacze":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"SystemWodny"' Enum="SystemWodnyIsChecked" --> :="SystemWodny": id="nawadnianie-input"><span class="slider round"></span></label></td>
+    </tr>
+      <tr>
+     
+           <td colspan="4" ><div class="center"><b>ALARM</b></div></td></tr>
+      <tr>
+        
+      <th scope="row">1</th>
+      <td>Alarm domowy</td>
+      <td><!-- AWP_Enum_Ref Name='"WlacznikAlarmuGlownego"' Enum="WlacznikAlarmuGlownegoValue" --> :="WlacznikAlarmuGlownego":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikAlarmuGlownego2"' Enum="WlacznikAlarmuGlownego2IsChecked" --> :="WlacznikAlarmuGlownego2": id="alarm-input"><span class="slider round"></span></td>
+    
+    </tr>
+      
+      <tr>
+        
+      <th scope="row">2</th>
+      <td>Alarm Kuchnia</td>
+      <td><!-- AWP_Enum_Ref Name='"pam_kuchnia_pomoc"' Enum="pam_kuchnia_pomocValue" --> :="pam_kuchnia_pomoc":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuKuchnia"' Enum="ZalaczenieAlarmuKuchniaIsChecked" --> :="ZalaczenieAlarmuKuchnia": id="alarmkuchnia-input"><span class="slider round"></span></td>
+    
+    </tr>
+      
+       <tr>
+        
+      <th scope="row">3</th>
+      <td>Alarm Salon 1</td>
+      <td><!-- AWP_Enum_Ref Name='"pomoc_alarm_salon1"' Enum="pomoc_alarm_salon1Value" --> :="pomoc_alarm_salon1":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuSalon1"' Enum="ZalaczenieAlarmuSalon1IsChecked" --> :="ZalaczenieAlarmuSalon1": id="alarmsalon1-input"><span class="slider round"></span></td>
+    
+    </tr>
+       <tr>
+        
+      <th scope="row">4</th>
+      <td>Alarm Salon 2</td>
+      <td><!-- AWP_Enum_Ref Name='"pomoc_alarm_salon2"' Enum="pomoc_alarm_salon2Value" --> :="pomoc_alarm_salon2":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuSalon2"' Enum="ZalaczenieAlarmuSalon2IsChecked" --> :="ZalaczenieAlarmuSalon2": id="alarmsalon2-input"><span class="slider round"></span></td>
+    
+    </tr>
+      
+        <tr>
+        
+      <th scope="row">5</th>
+      <td>Alarm Przedpokoj Dół </td>
+      <td><!-- AWP_Enum_Ref Name='"pomoc_przedpokojDOL"' Enum="pomoc_przedpokojDOLValue" --> :="pomoc_przedpokojDOL":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuPrzedpokojDol"' Enum="ZalaczenieAlarmuPrzedpokojDolIsChecked" --> :="ZalaczenieAlarmuPrzedpokojDol": id="alarmprzedpokoj-input"><span class="slider round"></span></td>
+    
+    </tr>
+      
+      <tr>
+        
+      <th scope="row">6</th>
+      <td>Alarm Przedpokoj </td>
+      <td><!-- AWP_Enum_Ref Name='"pomoc_alarm_garaz"' Enum="pomoc_alarm_garazValue" --> :="pomoc_alarm_garaz":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuGaraz"' Enum="ZalaczenieAlarmuGarazIsChecked" --> :="ZalaczenieAlarmuGaraz": id="alarmgaraz-input"><span class="slider round"></span></td>
+    
+    </tr>
+      
+       <tr>
+        
+      <th scope="row">7</th>
+      <td>Alarm Przedpokoj Góra </td>
+      <td><!-- AWP_Enum_Ref Name='"pomoc_przedpokoj_gora"' Enum="pomoc_przedpokoj_goraValue" --> :="pomoc_przedpokoj_gora":</td>
+          <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"ZalaczenieAlarmuPrzedpokojGora"' Enum="ZalaczenieAlarmuPrzedpokojGoraIsChecked" --> :="ZalaczenieAlarmuPrzedpokojGora": id="alarmprzedpokojgora-input"><span class="slider round"></span></td>
+   
+    </tr>
+
+      
+      <tr>
+     
+           <td colspan="4" ><div class="center"><b>ROLETY</b></div></td></tr>
+      
+      <tr>
+        
+      <th scope="row">1</th>
+      <td>ROLETY</td>
+      <td><!-- AWP_Enum_Ref Name='"CzujnikPołożeniaRolet_Zamkniete/Otwarte"' Enum="CzujnikPołożeniaRolet_Zamkniete/OtwarteValue" --> :="CzujnikPołożeniaRolet_Zamkniete/Otwarte":</td>
+      <td><label class="switch"> <input type="checkbox" <!-- AWP_Enum_Ref Name='"WlacznikZdalnyRolet"' Enum="WlacznikZdalnyRoletIsChecked" --> :="WlacznikZdalnyRolet": id="rolety-input"><span class="slider round"></span>
+       </td>
+    
+        </tr>
+       <tr>
+     
+           <td colspan="4" ><div class="center"><b>BRAMY</b></div></td></tr>
+       <tr>
+        
+      <th scope="row">1</th>
+      <td>Brama wjazdowa</td>
+      <td><!-- AWP_Enum_Ref Name='"Tag_7"' Enum="Tag_7Value" --> :="Tag_7":</td>
+      <td>
+            <!--<button id="przycisk-brama">Brama</button>-->
+          <button class="button" style="vertical-align:middle" id="przycisk-brama"><span>Brama</span></button>
+           </td>
+    
+          
+        </tr>
+       <tr>
+        
+      <th scope="row">2</th>
+      <td>Brama garażowa</td>
+      <td><!-- AWP_Enum_Ref Name='"Tag_181"' Enum="Tag_181Value" --> :="Tag_181":</td>
+           
+           
+      <td> <button class="button" style="vertical-align:middle" id="przycisk-garaz"><span>Garaż</span></button>
+          
+<!--
+          <form><button id="przycisk-garaz">Garaż</button>
+            <input type="hidden" name='"PrzyciskGaraz"' value="1" />
+      
+            <input type="submit" value="Garaz" / >
+            
+        </form>
+-->
+           </td>
+    
+        </tr>
+  </tbody>
+</table>
+    <!-- KONIEC TABELi-->
+<!--FOTO <img src="zdjecia/glowne.jpg" class="img-fluid" alt="Responsive image"> -->
+
+   
+    <!-- FOOOTER-->
+   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-color text-white">
+    <div class="container text-center">
+     
+        <p  margin-top: 150px; margin-bottom: 100px;>&copy; Copyright: Konrad Czarnowski Jakub Kożyczkowski</p>
+    </div>
+  </footer>
+ 
+
+
+    
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script>
+        $(function(){
+            $('#motor-input').change(function(){
+                $(this).attr('disabled', 1);
+                const motorState = $(this).is(':checked');
+                window.location = `sterowanie.html?"STOP"=${motorState ? '0' : '1'}&"START"=${motorState ? '1' : '0'}`;
+            });
+        });
+    </script>-->
+    <script>
+        $(function(){
+            $('#WlacznikPraduZewnetrzny-input').change(function(){
+                $(this).attr('disabled', 1);
+                const WlacznikPraduZewnetrznyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWlacznikPraduZewnetrzny"=${WlacznikPraduZewnetrznyState ?  '0' : '1'}`;
+            });
+        });
+    </script>
+
+   <!--  <script>
+        $(function(){
+            $('#WlacznikPraduZewnetrzny-input').change(function(){
+                $(this).attr('disabled', 1);
+                const WlacznikPraduZewnetrznyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWlacznikPraduZewnetrzny"=${WlacznikPraduZewnetrznyState ?  '0' : '1'}`;
+            });
+        });
+    </script>  -->
+    
+      <script>
+        $(function(){
+            $('#nawadnianie-input').change(function(){
+                $(this).attr('disabled', 1);
+                const SystemWodnyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZawor"=${SystemWodnyState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+         <script>
+                $(function(){
+                    $('#alarm-input').change(function(){
+                        $(this).attr('disabled', 1);
+                        const AlarmState = $(this).is(':checked');
+
+                        window.location = `sterowanie.html?"wwwWlacznikAlarmuDomowego"=${AlarmState ?  '0' : '1'}`;
+                    });
+                });
+            </script>  
+    
+    
+          <script>
+        $(function(){
+            $('#alarmkuchnia-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmKuchniaState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuKuchnia"=${AlarmKuchniaState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+       <script>
+        $(function(){
+            $('#alarmsalon1-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmSalon1State = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuSalon1"=${AlarmSalon1State ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+ <script>
+        $(function(){
+            $('#alarmsalon2-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmSalon2State = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuSalon2"=${AlarmSalon2State ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+    
+     <script>
+        $(function(){
+            $('#alarmprzedpokoj-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmPrzedpokojState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuPrzedpokojDol"=${AlarmPrzedpokojState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+    <script>
+        $(function(){
+            $('#alarmgaraz-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmGarazState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuGaraz"=${AlarmGarazState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    
+    
+     <script>
+        $(function(){
+            $('#alarmgaraz-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmGarazState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuGaraz"=${AlarmGarazState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+         <script>
+        $(function(){
+            $('#alarmprzedpokojgora-input').change(function(){
+                $(this).attr('disabled', 1);
+                const AlarmPrzedpokojGoraState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwZalaczenieAlarmuPrzedpokojGora"=${AlarmPrzedpokojGoraState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+      <script>
+        $(function(){
+            $('#ppoz-input').change(function(){
+                $(this).attr('disabled', 1);
+                const PPozState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWlacznikSystemPP"=${PPozState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+     <script>
+        $(function(){
+            $('#czad-input').change(function(){
+                $(this).attr('disabled', 1);
+                const SystemCzadState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWlacznikSystemCzadu"=${SystemCzadState ?  '0' : '1'}`;
+            });
+          
+            });
+    </script>  
+    <script>
+     $(function(){
+            
+            let garazRequestPending = false;
+            $('#przycisk-garaz').click(function(){
+                if (garazRequestPending) {
+                    return;
+                }
+                garazRequestPending = true;
+                const przyciskG = $(this);
+                let req= new XMLHttpRequest();
+
+                var req_url='?"PrzyciskGaraz"=1';
+                req.open("GET",req_url,false);
+                req.onreadystatechange=() => {
+                garazRequestPending = false;
+                window.location.reload();
+//                setTimeout (() => {
+//                    let req2= new XMLHttpRequest();
+//                    req2.open("GET",req_url,false);
+//                    req2.onreadystatechange=() => {
+//                        garazRequestPending = false;
+//                    };
+//                    req2.send(null);
+//                }, 1000)
+                };
+                req.send(null);
+            })
+            });
+    
+    
+    
+    </script>
+<script>
+    $(function(){
+            
+            
+            let bramaRequestPending = false;
+            $('#przycisk-brama').click(function(){
+                if (bramaRequestPending) {
+                    return;
+                }
+                bramaRequestPending = true;
+                const przyciskB = $(this);
+                let req= new XMLHttpRequest();
+
+                var req_url='?"PrzyciskBramaWjazdowa"=1';
+                req.open("GET",req_url,false);
+                req.onreadystatechange=() => {
+                bramaRequestPending = false;
+                window.location.reload();
+//                setTimeout (() => {
+//                    let req2= new XMLHttpRequest();
+//                    req2.open("GET",req_url,false);
+//                    req2.onreadystatechange=() => {
+//                        garazRequestPending = false;
+//                    };
+//                    req2.send(null);
+//                }, 1000)
+                };
+                req.send(null);
+            })
+            });
+    </script>
+    <script>
+        $(function(){
+            $('#rolety-input').change(function(){
+                $(this).attr('disabled', 1);
+                const roletyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWlacznikZdalnyRolet"=${roletyState ?  '0' : '1'}`;
+            });
+        });
+    </script> 
+     <script>
+        $(function(){
+            $('#glowny-input').change(function(){
+                $(this).attr('disabled', 1);
+                const glownyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWylacznikGlowny"=${glownyState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+      <script>
+        $(function(){
+            $('#kuchnia-input').change(function(){
+                $(this).attr('disabled', 1);
+                const kuchniaState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwKuchnia"=${kuchniaState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+     <script>
+        $(function(){
+            $('#salon-input').change(function(){
+                $(this).attr('disabled', 1);
+                const salonState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwSalon"=${salonState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    <script>
+        $(function(){
+            $('#przedpokoj-input').change(function(){
+                $(this).attr('disabled', 1);
+                const ppokojState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwPrzedpokoj"=${ppokojState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+     <script>
+        $(function(){
+            $('#wcDol-input').change(function(){
+                $(this).attr('disabled', 1);
+                const wcdState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWCdol"=${wcdState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+     <script>
+        $(function(){
+            $('#swiatloGaraz-input').change(function(){
+                $(this).attr('disabled', 1);
+                const GarazState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwGaraz"=${GarazState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+     <script>
+        $(function(){
+            $('#schody-input').change(function(){
+                $(this).attr('disabled', 1);
+                const SchodyState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwSchody"=${SchodyState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    <script>
+        $(function(){
+            $('#pokoj1-input').change(function(){
+                $(this).attr('disabled', 1);
+                const Pokoj1State = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwPokoj1"=${Pokoj1State ?  '0' : '1'}`;
+            });
+        });
+    </script> 
+    <script>
+        $(function(){
+            $('#pokoj2-input').change(function(){
+                $(this).attr('disabled', 1);
+                const Pokoj2State = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwPokoj2"=${Pokoj2State ?  '0' : '1'}`;
+            });
+        });
+    </script> 
+    <script>
+        $(function(){
+            $('#pokoj3-input').change(function(){
+                $(this).attr('disabled', 1);
+                const Pokoj3State = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwPokoj3"=${Pokoj3State ?  '0' : '1'}`;
+            });
+        });
+    </script> 
+    <script>
+        $(function(){
+            $('#wcGora-input').change(function(){
+                $(this).attr('disabled', 1);
+                const wcgState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwWCgora"=${wcgState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+    <script>
+        $(function(){
+            $('#PrzedpokojGora-input').change(function(){
+                $(this).attr('disabled', 1);
+                const ppGState = $(this).is(':checked');
+
+                window.location = `sterowanie.html?"wwwPrzedpokojGora"=${ppGState ?  '0' : '1'}`;
+            });
+        });
+    </script>  
+</body>
+
+</html>

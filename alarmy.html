@@ -1,0 +1,207 @@
+<!doctype html>
+
+
+<!-- AWP_In_Variable Name='"AlarmPnWyjscieZBIORCZY"'-->
+
+
+<!-- AWP_Enum_Def Name="WyjscieLampaPNZBIORCZEALARMYValue" Values='0:"OK",1:"AWARIA- sprawdz zarowki lub czujnik"' -->
+<!-- AWP_Enum_Def Name="WyjscieLampaWschZBIORCZEALARMYValue" Values='0:"OK",1:"AWARIA- sprawdz zarowki lub czujnik"' -->
+<!-- AWP_Enum_Def Name="AlarmPdWyjscieZBIORCZEValue" Values='0:"OK",1:"AWARIA- sprawdz zarowki lub czujnik"' -->
+<!-- AWP_Enum_Def Name="AlarmZachWyjscieZbiorczyValue" Values='0:"OK",1:"AWARA- sprawdz zarowki lub czujnik"' -->
+<!-- AWP_Enum_Def Name="AlarmPodjazdLampyZbiorczeValue" Values='0:"OK",1:"AWARA- sprawdz zarowki lub czujnik"' -->
+<!-- AWP_Enum_Def Name="AlarmPrzedBramaLampyZbiorczeValue" Values='0:"OK",1:"AWARA- sprawdz zarowki lub czujnik"' -->
+
+
+<!-- AWP_Enum_Def Name="WyjscieSystemPPValue" Values='0:"OK",1:"POZAR"' -->
+<!-- AWP_Enum_Def Name="WyjscieSystemCzaduValue" Values='0:"OK",1:"CZAD"' -->
+<!-- AWP_Enum_Def Name="SyrenaAlarmowaValue" Values='0:"OK",1:"WŁAMANIE!"' -->
+
+<!-- AWP_Enum_Def Name="AwariaZraszaczyValue" Values='0:"OK",1:"Awaria Systemu Nawadniania!"' -->
+<!-- AWP_Enum_Def Name="AwariaBramyValue" Values='0:"OK",1:"Awaria Bramy Wjazdowej!"' -->
+<!-- AWP_Enum_Def Name="AwariaGarazuValue" Values='0:"OK",1:"Awaria Bramy Garażowej"' -->
+
+
+
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuerry -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <title>ALARMY/AWARIE</title>
+  
+    
+    <link rel="shortcut icon" href="zdjecia/favicon.ico">
+</head>
+
+<body>
+    <!-- NAVBAR ROW BEGIN -->
+    
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-color navbar-expand-xl py-2">
+    <div class="d-flex w-50 order-0">
+        <a class="navbar-brand mr-1" href="#">Twój SMART HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">START</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sterowanie.html">STEROWANIE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alarmy.html">ALARMY/AWARIE</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">Praca inżynierska</span>
+</nav> 
+   <!-- Koniec NAVBARA-->
+   
+    <!-- TABELA-->
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"><img src="zdjecia/home_icon.jpg"; style=" width:40px; height=40px; " /></th>
+      <th scope="col">RODZAJ ALARMU</th>
+      <th scope="col">STAN AKTUALNY</th>
+        
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+     <th scope="row">1</th>
+      <td>System PRZECIWPOŻAROWY</td>
+      <td><div><!-- AWP_Enum_Ref Name='"WyjscieSystemPP"' Enum="WyjscieSystemPPValue" --> :="WyjscieSystemPP":</div></td>
+         
+    </tr>
+         <tr>
+     <th scope="row">2</th>
+      <td>System ANTYCZADOWY</td>
+      <td><div><!-- AWP_Enum_Ref Name='"WyjscieSystemCzadu"' Enum="WyjscieSystemCzaduValue" --> :="WyjscieSystemCzadu":</div></td>
+         
+    </tr>
+      
+      
+        <tr>
+     <th scope="row">3</th>
+      <td>Alarm domowy ANTYWŁAMANIOWY</td>
+      <td><div><!-- AWP_Enum_Ref Name='"SyrenaAlarmowa"' Enum="SyrenaAlarmowaValue" --> :="SyrenaAlarmowa":</div></td>
+         
+    </tr>
+      
+      
+       <tr> 
+     <th scope="row">4</th>
+      <td>Lampy Północ</td>
+      <td><div><!-- AWP_Enum_Ref Name='"WyjscieLampaPNZBIORCZEALARMY"' Enum="WyjscieLampaPNZBIORCZEALARMYValue" --> :="WyjscieLampaPNZBIORCZEALARMY":</div></td>
+           
+    
+    </tr>
+       
+       <tr> 
+     <th scope="row">5</th>
+      <td>Lampy Południe</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AlarmPdWyjscieZBIORCZE"' Enum="AlarmPdWyjscieZBIORCZEValue" --> :="AlarmPdWyjscieZBIORCZE":</div></td>
+        
+    
+    </tr>
+      
+      <tr> 
+     <th scope="row">6</th>
+      <td>Lampy Wschód</td>
+      <td><div><!-- AWP_Enum_Ref Name='"WyjscieLampaWschZBIORCZEALARMY"' Enum="WyjscieLampaWschZBIORCZEALARMYValue" --> :="WyjscieLampaWschZBIORCZEALARMY":</div></td>
+           
+    
+    </tr>
+      
+       <tr> 
+     <th scope="row">7</th>
+      <td>Lampy Zachód</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AlarmZachWyjscieZbiorczy"' Enum="AlarmZachWyjscieZbiorczyValue" --> :="AlarmZachWyjscieZbiorczy":</div></td>
+           
+    
+    </tr>
+      
+       
+      
+       <tr> 
+     <th scope="row">8</th>
+      <td>Lampy Podjazd + Ogród</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AlarmPodjazdLampyZbiorcze"' Enum="AlarmPodjazdLampyZbiorczeValue" --> :="AlarmPodjazdLampyZbiorcze":</div></td>
+      </tr>
+       <tr> 
+     <th scope="row">9</th>
+      <td>Lampy przed bramą</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AlarmPrzedBramaLampyZbiorcze"' Enum="AlarmPrzedBramaLampyZbiorczeValue" --> :="AlarmPrzedBramaLampyZbiorcze":</div></td>
+             </tr><tr>
+           <th scope="row">10</th>
+      <td>Nawadnianie</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AwariaZraszaczy"' Enum="AwariaZraszaczyValue" --> :="AwariaZraszaczy":</div></td>
+           </tr><tr>
+     <th scope="row">11</th>
+      <td>Garaż</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AwariaGarazu"' Enum="AwariaGarazuValue" --> :="AwariaGarazu":</div></td>
+           </tr><tr>
+          <th scope="row">12</th>
+      <td>Brama</td>
+      <td><div><!-- AWP_Enum_Ref Name='"AwariaBramy"' Enum="AwariaBramyValue" --> :="AwariaBramy":</div></td> 
+      </tr>
+      
+           
+
+      
+      
+      
+      
+      
+      
+  </tbody>
+</table>
+    <!-- KONIEC TABELi-->
+
+
+    
+    
+    
+    
+    <!-- FOOOTER-->
+   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-color text-white">
+    <div class="container text-center">
+     
+        <p  margin-top: 150px; margin-bottom: 100px;>&copy; Copyright: Konrad Czarnowski Jakub Kożyczkowski</p>
+    </div>
+  </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<script>
+
+    document.getElementById('changeCOLOR').onclick = changeColor;   
+
+    function changeColor() {
+        document.getElementById("obrazek").style.backgroundColor='green';
+        return false;
+        
+    }   
+
+</script>
+ 
+</body>
+
+</html>

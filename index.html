@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuerry -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <title>STRONA STARTOWA</title>
+    <link rel="shortcut icon" href="zdjecia/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVBAR ROW BEGIN -->
+    
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-color navbar-expand-xl py-2">
+    <div class="d-flex w-50 order-0">
+        <a class="navbar-brand mr-1" href="#">Twój SMART HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">START</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sterowanie.html">STEROWANIE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alarmy.html">ALARMY/AWARIE</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">Praca inżynierka</span>
+</nav> 
+    <h1> Witaj w swoim domu! </h1>
+    <br>
+    <h1><b><div id="czas" class="center" ></div></b></h1>
+ 
+<script type="text/javascript">
+function getTime() 
+{
+    return (new Date()).toLocaleTimeString();
+}
+ 
+//wywołanie ma na celu eliminację opóźnienia sekundowego
+$('#czas').html(getTime());
+ 
+setInterval(function() {
+ 
+    $('#czas').html(getTime());
+     
+}, 1000);
+</script>
+    <br>
+    
+    <!--KALENDARZ-->
+    <div class="container-fluid">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FWarsaw&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=1&src=a29ucmFkaGN6YXJub3dza2lAZ21haWwuY29t&src=ODg4MGViYTVrcm84ZDBnMDh0dnZicDZiaHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=cGwuY2hyaXN0aWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23E67C73&color=%234285F4&color=%230B8043" style="border-width:0" align="center"  width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <br>
+    <br>
+    <br>
+    </div>
+    <!-- POGODA-->
+   <div class="center"> 
+<div id="tp-widget-default" class="tp-widget-default-light" data-city="3233" data-version="2.0.0">
+	<div id="tp-widget-bottom-default">
+		<a id="tp-widget-flink-default" href="https://www.twojapogoda.pl/prognoza-godzinowa-polska/pomorskie-gdynia/" target="_blank" rel="nofollow" title="Gdynia - prognoza godzinowa">Godzina po godzinie</a>
+		<a id="tp-widget-flink-second" href="https://www.twojapogoda.pl/prognoza-16dni-polska/pomorskie-gdynia/" target="_blank" rel="nofollow" title="Gdynia - prognoza na 16 dni">Na 16 dni</a>
+		<a id="tp-widget-mlink-default" href="https://www.twojapogoda.pl" target="_blank" rel="nofollow" title="TwojaPogoda.pl - Pogoda w Polsce i na świecie - pogoda na 16 dni"></a>
+	</div>
+	<script type="text/javascript">
+		(function (t, p, w, d, g) {
+			if (t.getElementById(w)) return;
+			d = t.getElementsByTagName(p)[0], g = t.createElement(p);
+			g.id = w; g.src = "https://widget.twojapogoda.pl/default/main.js";g.charset="UTF-8";
+			d.parentNode.appendChild(g);
+		}(document, "script", "tp-widget-script-default"));
+	</script>
+</div>
+</div>
+    <!--KONIEC POGODA-->
+    <br>
+            
+
+
+   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-color text-white">
+    <div class="container text-center">
+     
+        <p  margin-top: 150px; margin-bottom: 100px;>&copy; Copyright: Konrad Czarnowski Jakub Kożyczkowski</p>
+    </div>
+  </footer>
+  <!-- Copyright -->
+ <!-- <div class="footer-copyright text-center py-3">© 2021 Copyright: Konrad Czarnowski Jakub Kożyczkowski
+  </div> -->
+  <!-- Copyright -->
+
+
+    
+    <!-- JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- START SKRYPTY FUNKCJONALNOŚC 
+    <script src="js/GoToHTML_mapping.js"></script>
+    <script src="js/logic_Alarms_all_nav.js"></script>
+    KONIEC SKRYPTY FUNKCJONALNOŚC -->
+</body>
+
+</html>
